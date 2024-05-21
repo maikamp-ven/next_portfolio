@@ -2,6 +2,8 @@
 
 import Link from "next/link"
 import styles from './page.module.css';
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+// import { signOut, useSession } from "next-auth/react";
 
 const links = [
   {
@@ -42,6 +44,7 @@ const Navbar = () => {
     <nav className={styles.container}>
       <Link href='/' className={styles.logo}>MyApp</Link>
       <div className={styles.links}>
+        <DarkModeToggle />  
         {links.map((link) =>(
           <Link key = {link.id} href={link.url}>{link.title}</Link>
         ))}
