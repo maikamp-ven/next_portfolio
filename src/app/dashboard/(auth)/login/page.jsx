@@ -1,11 +1,14 @@
-import styles from './page.module.css'
+"use client";
 
-const Login
- = () => {
+import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
+
+const Login = () => {
+  
   return (
-    <div>Login
-    </div>
-  )
-}
+    <div className={styles.container}>login</div>
+      
+  );
+};
 
-export default Login
+export default Login;

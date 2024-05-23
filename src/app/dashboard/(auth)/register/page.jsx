@@ -1,9 +1,14 @@
-import styles from './page.module.css'
+"use client";
+import styles from "./page.module.css";
+
 
 const Register = () => {
-  return (
-    <div>Register</div>
-  )
-}
 
-export default Register
+  return (
+    <div className={styles.container}>
+      register
+    </div>
+  );
+};
+
+export default Register;
